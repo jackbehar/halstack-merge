@@ -1,37 +1,63 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button as ButtonM } from '@salesforce/design-system-react';
-import mainLogo from'./logo.svg';
+import { DxcButton } from "@dxc-technology/halstack-react";
 
-function Button(props) {
-  return (
-    <>
-              <img src={mainLogo} alt="logo" />
+/**
+ * @uxpindocurl https://developer.dxc.com/halstack/9/components/button/
+ */
 
-      <ButtonM
-        {...props}
-        onClick={props.onClick}
-        disabled={props.disabled}
-      />
-      </>
-  );
+export default function Button(props) {
+  return <div><DxcButton {...props} /></div>;
 }
 
-Button.propTypes = {
-  variant: PropTypes.oneOf(['base', 'link', 'neutral', 'brand', 'outline-brand', 'destructive', 'success', 'text-destructive', 'icon']),
-  assistiveText: PropTypes.shape({ icon: PropTypes.string}),
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
-  hint: PropTypes.bool,
-  inverse: PropTypes.bool,
-  label: PropTypes.string,
-  iconCategory: PropTypes.string,
-  iconName: PropTypes.string,
-  iconPosition: PropTypes.oneOf(['left','right']),
-  iconSize: PropTypes.oneOf(['x-small', 'small', 'medium', 'large']),
-  onClick: PropTypes.func,
-  buttonRef: PropTypes.func,
-  style: PropTypes.object,
-};
 
-export default Button;
+Button.propTypes = {  /**
+* The text to be displayed inside the button.
+*/
+label: PropTypes.string.isRequired,
+/**
+* The mode of the button: 'primary', 'secondary', 'text', or 'icon'.
+*/
+mode: PropTypes.oneOf(['primary', 'secondary', 'text', 'icon']),
+/**
+* The theme of the button: 'light' or 'dark'.
+*/
+theme: PropTypes.oneOf(['light', 'dark']),
+/**
+* Whether the button is disabled.
+*/
+disabled: PropTypes.bool,
+/**
+* The URL of the icon to be displayed inside the button. Only used in 'icon' mode.
+*/
+iconSrc: PropTypes.string,
+/**
+* The position of the icon relative to the label. Only used in 'icon' mode.
+*/
+iconPosition: PropTypes.oneOf(['before', 'after']),
+/**
+* The margin of the button. Can be a string or an object containing `top`, `bottom`, `left`, and `right` values.
+*/
+margin: PropTypes.oneOf(["xxsmall", "xsmall", "small", "medium", "large", "xlarge", , "xxlarge"]),
+
+/**
+* The function to be called when the button is clicked.
+*/
+onClick: PropTypes.func,
+/**
+* The size of the button: 'small', 'medium', or 'large'.
+*/
+size: PropTypes.oneOf(['small', 'medium', 'large']),
+/**
+* The tabindex of the button.
+*/
+tabIndex: PropTypes.number,
+/**
+* The type of the button: 'button', 'reset', or 'submit'.
+*/
+type: PropTypes.oneOf(['button', 'reset', 'submit']),
+/**
+* The value of the button. Only used when the type is 'submit'.
+*/
+value: PropTypes.string,
+};
