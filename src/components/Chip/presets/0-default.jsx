@@ -1,6 +1,6 @@
-// import * as React from "react";
-// import Link from "../Link";
+import * as React from "react";
+import Chip from "../Chip";
 
-// export default (
-//   <Link uxpId="link" >I am a Link</Link>
-// );
+export default (
+  <Chip uxpId="chip" label="I'm Chip!"/>
+);

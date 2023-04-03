@@ -4,6 +4,7 @@ import Button from "../Button";
 export default (
   <Button
     uxpId="button"
-    label="Click Me!">
+    label="Click Me!"
+    size="medium">
   </Button>
 );

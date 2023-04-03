@@ -5,6 +5,7 @@ export default (
   <Checkbox
     uxpId="checkbox"
     label="I am a checkbox!"
-    labelPosition="after">
+    labelPosition="after"
+    size="medium">
   </Checkbox>
 );

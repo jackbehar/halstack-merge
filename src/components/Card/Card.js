@@ -5,7 +5,10 @@ import { DxcCard } from "@dxc-technology/halstack-react";
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/card/
  */
-
+/**
+ * @uxpinwrappers
+ * SkipContainerWrapper, NonResizableWrapper
+ */
 export default function Card(props) {
   return <div><DxcCard {...props} /></div>;
 }

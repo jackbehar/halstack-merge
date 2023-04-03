@@ -5,7 +5,10 @@ import { DxcButton } from "@dxc-technology/halstack-react";
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/button/
  */
-
+/**
+ * @uxpinwrappers
+ * SkipContainerWrapper, NonResizableWrapper
+ */
 export default function Button(props) {
   return <div><DxcButton {...props} /></div>;
 }

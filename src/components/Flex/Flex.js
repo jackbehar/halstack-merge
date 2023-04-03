@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { DxcFlex } from "@dxc-technology/halstack-react/";
 
-/**
- * @uxpinwrappers
- * SkipContainerWrapper
- */
+
 const Flex = (props) => {
   return <DxcFlex {...props}>{props.children}</DxcFlex>;
 };

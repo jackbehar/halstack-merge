@@ -5,7 +5,10 @@ import { DxcCheckbox } from "@dxc-technology/halstack-react";
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/checkbox/
  */
-
+/**
+ * @uxpinwrappers
+ * SkipContainerWrapper, NonResizableWrapper
+ */
 export default function Checkbox(props) {
   return <div><DxcCheckbox {...props} /></div>;
 }

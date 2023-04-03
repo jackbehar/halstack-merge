@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { DxcChip } from "@dxc-technology/halstack-react";
-
+/**
+ * @uxpindocurl https://developer.dxc.com/halstack/9/components/chip/
+ */
 const Chip = (props) => {
   return (
-    <DxcChip {...props} />
+   <div><DxcChip {...props} /></div>
   );
 };
 

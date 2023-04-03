@@ -6,7 +6,7 @@ export default (
     uxpId="button"
     label="Select your favorite city"
     placeholder="Choose a city"
-    defaultValue="madrid"
+    size="small"
     options={[
       {
         label: "Madrid",
