@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { DxcAccordion } from "@dxc-technology/halstack-react";
 
 /**
- * @uxpindocurl https://developer.dxc.com/halstack/9/components/text-input/
+ * @uxpindocurl https://developer.dxc.com/halstack/9/components/accordion/
  */
 export default function Accordion(props) {
   return (
