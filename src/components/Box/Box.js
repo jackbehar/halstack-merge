@@ -25,7 +25,7 @@ Box.propTypes = {
   /**
   Size of the component
   */
-  
+
   size: PropTypes.oneOf([
     "small",
     "medium",
@@ -33,7 +33,7 @@ Box.propTypes = {
     "fitContent",
     "fillParent",
   ]),
-  
+
   /**
    * The margin of the checkbox. Can be a string or an object containing `top`, `bottom`, `left`, and `right` values.
    */
@@ -56,15 +56,24 @@ Box.propTypes = {
     "small",
     "medium",
     "large",
-    "xlarge", 
+    "xlarge",
     "xxlarge",
   ]),
-  
+
   /**
   Changes the display CSS property of the box div.
    */
-  display: PropTypes.string,
-  
+  display: PropTypes.oneOf([
+    "block",
+    "inline",
+    "inline-block",
+    "flex",
+    "grid",
+    "table",
+    "table-cell",
+    "table-row",
+  ]),
+
   /**
   Custom content that will be placed in the box component.
    */
