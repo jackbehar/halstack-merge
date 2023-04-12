@@ -4,5 +4,5 @@ import { HalstackProvider } from "@dxc-technology/halstack-react";
 import theme from "./theme";
 
 export default function UXPinWrapper({ children }) {
-  return <HalstackProvider advancedTheme={theme}>{children}</HalstackProvider>
+  return <HalstackProvider advancedTheme={theme}>{children}</HalstackProvider>;
 }

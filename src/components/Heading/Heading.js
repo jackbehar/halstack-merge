@@ -4,10 +4,7 @@ import { DxcHeading } from "@dxc-technology/halstack-react";
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/Heading/
  */
-/**
- * @uxpinwrappers
- * SkipContainerWrapper, NonResizableWrapper
- */
+
 const Heading = (props) => {
   return (
    <div style={{display:"grid"}}><DxcHeading {...props} /></div>
