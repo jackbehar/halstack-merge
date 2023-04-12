@@ -11,6 +11,8 @@ module.exports = {
           'src/components/Chip/Chip.js',
           'src/components/Flex/Flex.js',
           'src/components/Select/Select.js',
+          'src/components/Heading/Heading.js',
+          'src/components/ApplicationLayout/ApplicationLayout.js',
         ],
       },
     ],
