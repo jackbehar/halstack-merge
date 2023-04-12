@@ -28,5 +28,5 @@ module.exports = {
     wrapper: "src/components/UXPinWrapper/UXPinWrapper.js",
     webpackConfig: "webpack.config.js",
   },
-  name: "DXC Design System",
+  name: "DXC Halstack Design System",
 };

@@ -1,5 +1,5 @@
 {
-  "name": "merge-material",
+  "name": "halstack-ds",
   "version": "1.0.17",
   "source": "src/index.js",
   "main": "dist/main.js",
