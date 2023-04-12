@@ -7,9 +7,7 @@ import { DxcAccordion } from "@dxc-technology/halstack-react";
  */
 export default function Accordion(props) {
   return (
-    <div style={{ display: "grid" }}>
       <DxcAccordion {...props} />
-    </div>
   );
 }
 
