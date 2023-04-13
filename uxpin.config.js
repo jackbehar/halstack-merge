@@ -4,6 +4,8 @@ module.exports = {
       {
         name: "General",
         include: [
+          "src/components/ThemeCustomizer/ThemeCustomizer.js",
+
           "src/components/Accordion/Accordion.js",
           "src/components/Button/Button.js",
           "src/components/Checkbox/Checkbox.js",
