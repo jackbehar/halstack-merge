@@ -2,15 +2,19 @@ module.exports = {
   components: {
     categories: [
       {
-        name: "General",
+        name: "TypeScript components",
+        include: [
+          "src/components/Button/Button.tsx",
+          "src/components/Card/Card.tsx",
+          "src/components/Accordion/Accordion.tsx",
+        ],
+      },
+      {
+        name: "JS components",
         include: [
           "src/components/ThemeCustomizer/ThemeCustomizer.js",
-
-          "src/components/Accordion/Accordion.js",
-          "src/components/Button/Button.js",
           "src/components/Checkbox/Checkbox.js",
           "src/components/TextInput/TextInput.js",
-          "src/components/Card/Card.js",
           "src/components/Chip/Chip.js",
           "src/components/Flex/Flex.js",
           "src/components/Select/Select.js",
