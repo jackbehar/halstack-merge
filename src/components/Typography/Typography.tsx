@@ -9,12 +9,10 @@ export default function Typography(props: TypographyPropsType) {
 
 
   return (
-    <div style={{ display: "grid" }}>
       <DxcTypography {...props}>
         {typeof props.children === 'string'
-          ? <div dangerouslySetInnerHTML={{ __html: `${props.children}` }} />
+          ? <span dangerouslySetInnerHTML={{ __html: `${props.children}` }} />
           : props.children}
       </DxcTypography>
-    </div>
   );
 }
