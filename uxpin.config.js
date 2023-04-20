@@ -8,6 +8,7 @@ module.exports = {
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",
           "src/components/Typography/Typography.tsx",
+          "src/components/Dialog/Dialog.tsx",
         ],
       },
       {
