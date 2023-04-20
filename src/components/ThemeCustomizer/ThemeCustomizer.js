@@ -1,6 +1,8 @@
 import React, { useEffect, useContext } from "react";
 import PropTypes from "prop-types";
 import { ThemeContext } from "../UXPinWrapper/UXPinWrapper";
+import { createPortal } from "react-dom";
+import { DxcInset, DxcAlert } from "@dxc-technology/halstack-react";
 
 export default function ThemeCustomizer(props) {
   const [themeOptions, setThemeOptions] = useContext(ThemeContext);
@@ -91,19 +93,26 @@ export default function ThemeCustomizer(props) {
   };
 
   return (
-    <div>
-      <h1>Global Theme Customizer</h1>
-      <p>
-        Create or modify theme at <br />
-        <a
-          href="https://developer.dxc.com/halstack/9/theme-generator/advanced-theme/"
-          target="_blank"
-        >
-          https://developer.dxc.com/halstack/9/theme-generator/advanced-theme/
-        </a>
-      </p>
-      <div style={{ marginTop: "2em" }}>{props.children}</div>
-    </div>
+    <>
+      {createPortal(
+        <div>
+          <DxcInset space=".5rem">
+            <DxcAlert
+              size="fillParent"
+              inlineText="Global Theme Customizer Applied. Create or modify theme at:"
+            >
+              <a
+                href="https://developer.dxc.com/halstack/9/theme-generator/advanced-theme/"
+                target="_blank"
+              >
+                https://developer.dxc.com/halstack/9/theme-generator/advanced-theme/
+              </a>
+            </DxcAlert>
+          </DxcInset>
+        </div>,
+        document.querySelector("#workbench-wrapper")
+      )}
+    </>
   );
 }
 

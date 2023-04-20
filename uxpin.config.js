@@ -7,6 +7,7 @@ module.exports = {
           "src/components/Button/Button.tsx",
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",
+          "src/components/Typography/Typography.tsx",
         ],
       },
       {
