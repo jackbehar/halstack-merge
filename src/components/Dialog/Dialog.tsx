@@ -10,16 +10,11 @@ export interface MergeDialogPropsType extends DialogPropsType {
  * @uxpinuseportal
  */
 export default function Dialog(props: MergeDialogPropsType) {
-
-  const [isDialogVisible, setDialogVisible] = React.useState(props.open);
-  const handleClick = () => {
-    setDialogVisible(!isDialogVisible);
-    console.log(isDialogVisible)
-  };
-
+  const [open, setOpen] = React.useState(props.open);
+  React.useEffect(() => setOpen(props.open), [props]);
   return (
-    props.open && (
-      <DxcDialog onCloseClick={handleClick} {...props}/>
+    open && (
+      <DxcDialog {...props} />
     )
   );
 }
