@@ -26,7 +26,22 @@ const config = {
           'style-loader',
           'css-loader'
         ]
-      }
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "svg-url-loader",
+            options: {
+              encoding: "base64",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/inline'
+      },
     ]
   },
   resolve: {

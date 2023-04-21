@@ -5,7 +5,6 @@ import DialogPropsType from "@dxc-technology/halstack-react/dialog/types";
 export interface MergeDialogPropsType extends DialogPropsType {
   open: boolean;
 }
-
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/dialog/
  * @uxpinuseportal

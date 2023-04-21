@@ -9,6 +9,7 @@ module.exports = {
           "src/components/Accordion/Accordion.tsx",
           "src/components/Typography/Typography.tsx",
           "src/components/Dialog/Dialog.tsx",
+          "src/components/Tabs/Tabs.tsx",
         ],
       },
       {
