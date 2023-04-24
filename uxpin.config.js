@@ -10,6 +10,8 @@ module.exports = {
           "src/components/Typography/Typography.tsx",
           "src/components/Dialog/Dialog.tsx",
           "src/components/Tabs/Tabs.tsx",
+          "src/components/Icon/Icon.js",
+
         ],
       },
       {

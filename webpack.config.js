@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const config = {
   entry: [
@@ -29,18 +30,8 @@ const config = {
       },
       {
         test: /\.svg$/,
-        use: [
-          {
-            loader: "svg-url-loader",
-            options: {
-              encoding: "base64",
-            },
-          },
-        ],
-      },
-      {
-        test: /\.svg/,
-        type: 'asset/inline'
+        exclude: /node_modules/,
+        loader: 'svg-react-loader',
       },
     ]
   },
@@ -51,7 +42,13 @@ const config = {
     'static': {
       directory: './dist'
     }
-  }
+  },
+  plugins: [
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1,
+    }),
+  ],
+
 };
 
 module.exports = config;
