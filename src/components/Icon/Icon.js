@@ -12,5 +12,8 @@ export default function Icon({  icon }) {
 Icon.propTypes = {
   icon: PropTypes.oneOf([
     'ArrowDown',
+    'ArrowNext',
+    'ArrowPrevious',
+    'ArrowUp',
   ]),
 };
