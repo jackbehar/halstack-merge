@@ -23,10 +23,39 @@ const config = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      // {
+      //   test: /\.svg$/,
+      //   exclude: /node_modules/,
+      //   loader: "svg-react-loader",
+      // },
+       // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: "svg-url-loader",
+      //       options: {
+      //         // limit: 10000,
+      //         encoding: "base64",
+
+      //       },
+      //     },
+      //   ],
+      // },
+      // {
+      //   test: /\.svg$/i,
+      //   issuer: /\.[jt]sx?$/,
+      //   use: ['@svgr/webpack'],
+      // },
       {
-        test: /\.svg$/,
-        exclude: /node_modules/,
-        loader: "svg-react-loader",
+        test: /\.svg$/i,
+        type: 'asset',
+        resourceQuery: /url/, // *.svg?url
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        resourceQuery: { not: [/url/] }, // exclude react component if *.svg?url
+        use: ['@svgr/webpack'],
       },
     ],
   },

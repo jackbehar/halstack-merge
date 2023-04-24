@@ -3,9 +3,8 @@ import Icon from '../Icon';
 
 export default (
   <Icon
-    icon="CalendarSvg"
-    color="primary"
-    size="xxl"
+    icon="ArrowDown"
+    color="red"
     uxpId="icon1"
   />
 );

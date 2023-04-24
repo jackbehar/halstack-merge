@@ -5,6 +5,6 @@ export default (
   <Button
     uxpId="button"
     label="Click Me!"
-    size="medium">
+    size="fitContent">
   </Button>
 );
