@@ -21,10 +21,7 @@ export default function Button(props: MergeButtonPropsType) {
   }, [props]); // Only re-run the effect if value prop changes
 
 
-  // const selectedIcon = <Icon icon={iconState}/>
-    const selectedIcon = <Icon icon={iconState}/>
+  const selectedIcon = <Icon icon={iconState}/>
 
-  console.log("myIcon:", selectedIcon)
-
-  return <div><DxcButton {...props} icon={props.icon ? selectedIcon : undefined} /></div>;
+  return <div><DxcButton {...props} icon={props.icon && selectedIcon } /></div>;
 }

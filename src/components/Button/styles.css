@@ -1,3 +1,5 @@
-button[mode="primary"] svg path{
-    fill: white !important
-  }
+button[mode="primary"] svg path,
+button[mode="secondary"] svg path,
+button[mode="text"] svg path  {
+  fill: currentColor !important;
+}
