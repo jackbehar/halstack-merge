@@ -3,47 +3,61 @@ import { DxcDialog } from "@dxc-technology/halstack-react";
 import DialogPropsType from "@dxc-technology/halstack-react/dialog/types";
 
 export interface MergeDialogPropsType extends DialogPropsType {
+  /**
+   * The visibility of the dialog.
+   * @uxpinbind onCloseClick 0
+   */
   open?: boolean;
-  id?: string;
-}
-
-const Foo: React.FC<MergeDialogPropsType> = (props: MergeDialogPropsType) => {
-  return( <DxcDialog  id="jackDialog"{...props}><p>hello jack</p></DxcDialog>)
 }
 
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/dialog/
-  * @uxpinuseportal
+* @uxpinuseportal
  */
 export default function Dialog(props: MergeDialogPropsType) {
-  const [open, setOpen] = React.useState(props.open);
+  // const [open, setOpen] = React.useState(props.open);
+
+
+  //  React.useEffect(() => {
+  //     alert("wirthout prop")
+  //   }, []);
+
 
   React.useEffect(() => {
-    setOpen(props.open)
-  }, [props.open]);
-  
-  React.useLayoutEffect(() => {
+    // setOpen(props.open)   
 
-    if (document.getElementById("jack2")) {
-      alert("yes")
-      const container = document.getElementById('jack2');
+    if (document.getElementById("dialogContainer")) {
+      // alert("container found")
+      const container = document.getElementById('dialogContainer');
       let dialog = document.querySelector('[role="dialog"]')?.parentElement;
       container!.appendChild(dialog!)
     }
+  }, [props.open]);
 
-  }, [props]);
 
-  
+
+  // React.useLayoutEffect(() => {
+
+  //   if (document.getElementById("dialogContainer")) {
+  //     // alert("yes")
+  //     const container = document.getElementById('dialogContainer');
+  //     let dialog = document.querySelector('[role="dialog"]')?.parentElement;
+  //     container!.appendChild(dialog!)
+  //   }
+
+  // }, [props]);
+
+
   return (
-  open && (
-  <>
-    <div id="jack2">foo here</div>
-    <DxcDialog {...props}><p>hello jack0!</p></DxcDialog>
-    </>
-  )
-    
-    // open && (
-    //   Foo
-    // )
+    props.open && (
+
+      <div id="dialogContainer" style={{ minWidth: "768px", minHeight: "600px" }}> {/* DIALOG WILL MOUNT IN THIS DIV */}
+
+        <DxcDialog {...props}>{props.children}</DxcDialog>
+
+      </div>
+
+
+    )
   )
 }
