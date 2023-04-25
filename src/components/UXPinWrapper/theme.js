@@ -431,7 +431,7 @@ const theme = {
 		"hamburguerTextTransform": "uppercase",
 		"hamburguerIconColor": "#000000",
 		"hamburguerHoverColor": "#e6e6e6",
-		"logo": "/dxc_header_logo.svg",
+		"logo": "blob:https://developer.dxc.com/ec5cf678-e097-4edf-b7ec-7fda34cebe73",
 		"logoResponsive": "/dxc_header_logo.svg",
 		"logoHeight": "40px",
 		"logoWidth": "auto",
