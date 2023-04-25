@@ -1,0 +1,1 @@
+export type IconValues = "ArrowDown" | "ArrowUp" | "ArrowNext";

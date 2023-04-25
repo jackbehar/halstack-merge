@@ -2,10 +2,12 @@ import React from 'react';
 import { DxcButton } from "@dxc-technology/halstack-react";
 import ButtonPropsType from "@dxc-technology/halstack-react/button/types";
 import Icon from '../Icon/Icon'
+import { IconValues } from '../Icon/types';
+
 import "./styles.css"
 
 export interface MergeButtonPropsType extends ButtonPropsType {
-  icon: "ArrowDown" | "ArrowUp";
+  icon?: IconValues;
 }
 
 /**
