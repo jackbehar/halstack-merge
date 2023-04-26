@@ -4,6 +4,17 @@ module.exports = {
       {
         name: "TypeScript components",
         include: [
+          "src/components/BulletedList/BulletedList.tsx",
+          "src/components/BulletedListItem/BulletedListItem.tsx",
+          "src/components/Sidenav/Sidenav.tsx",
+          "src/components/SidenavGroup/SidenavGroup.tsx",
+          "src/components/SidenavLink/SidenavLink.tsx",
+          "src/components/SidenavSection/SidenavSection.tsx",
+          "src/components/SidenavTitle/SidenavTitle.tsx",
+          "src/components/ApplicationLayout/ApplicationLayout.tsx",
+          "src/components/Header/Header.tsx",
+
+
           "src/components/Button/Button.tsx",
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",
@@ -32,7 +43,6 @@ module.exports = {
           "src/components/Inset/Inset.js",
           "src/components/Bleed/Bleed.js",
           "src/components/Box/Box.js",
-          "src/components/ApplicationLayout/ApplicationLayout.js",
         ],
       },
     ],
