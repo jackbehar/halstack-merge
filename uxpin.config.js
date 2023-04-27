@@ -11,9 +11,7 @@ module.exports = {
           "src/components/SidenavLink/SidenavLink.tsx",
           "src/components/SidenavSection/SidenavSection.tsx",
           "src/components/SidenavTitle/SidenavTitle.tsx",
-          "src/components/Header/Header.tsx",
-          "src/components/Main/Main.tsx",
-          "src/components/ApplicationLayout/ApplicationLayout.jsx",
+
           "src/components/Button/Button.tsx",
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",
@@ -21,7 +19,15 @@ module.exports = {
           "src/components/Dialog/Dialog.tsx",
           "src/components/Tabs/Tabs.tsx",
           "src/components/Icon/Icon.tsx",
-
+        ],
+      },
+      {
+        name: "Layout",
+        include: [
+          "src/components/ApplicationLayout/ApplicationLayout.jsx",
+          "src/components/Header/Header.tsx",
+          "src/components/Main/Main.tsx",
+          "src/components/Footer/Footer.tsx",
         ],
       },
       {
