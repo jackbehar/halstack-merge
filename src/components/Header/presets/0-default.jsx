@@ -4,6 +4,7 @@ import Header from "../Header";
 export default (
   <Header
     uxpId="header"
+    name="header"
     underlined
     content={<Button uxpId="header-button" label="Header Button" />}
     responsiveContent={(closeHandler) => (

@@ -11,10 +11,9 @@ module.exports = {
           "src/components/SidenavLink/SidenavLink.tsx",
           "src/components/SidenavSection/SidenavSection.tsx",
           "src/components/SidenavTitle/SidenavTitle.tsx",
-          "src/components/ApplicationLayout/ApplicationLayout.tsx",
           "src/components/Header/Header.tsx",
-
-
+          "src/components/Main/Main.tsx",
+          "src/components/ApplicationLayout/ApplicationLayout.jsx",
           "src/components/Button/Button.tsx",
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",

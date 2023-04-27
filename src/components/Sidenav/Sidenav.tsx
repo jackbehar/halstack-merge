@@ -1,17 +1,6 @@
 import { DxcApplicationLayout } from "@dxc-technology/halstack-react";
-import React, { ReactNode } from "react";
+import AppLayoutSidenavPropsType from "@dxc-technology/halstack-react/layout/types";
 
-type SidenavPropsType = {
-  /**
-   * The area inside the sidenav. This area can be used to render the content inside the sidenav.
-   */
-  children: ReactNode;
-  /**
-   * The area assigned to render the sidenav title. It is highly recommended to use the sidenav title.
-   */
-  title?: ReactNode;
-};
-
-export default function Sidenav(props: SidenavPropsType) {
-  return <DxcApplicationLayout.SideNav {...props} />;
+export default function Sidenav(props: AppLayoutSidenavPropsType) {
+  return <DxcApplicationLayout.SideNav   {...props} />;
 }
