@@ -39,6 +39,7 @@ const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
   });
 
   return (
+    <div>
     <div style={{ minWidth: "350px", minHeight: "350px" }}>
       <DxcApplicationLayout
         header={slots.header}
@@ -48,6 +49,7 @@ const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
       >
         <DxcApplicationLayout.Main>{slots.main}</DxcApplicationLayout.Main>
       </DxcApplicationLayout>
+    </div>
     </div>
   );
 };
