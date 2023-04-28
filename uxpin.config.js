@@ -28,6 +28,7 @@ module.exports = {
           "src/components/Header/Header.tsx",
           "src/components/Main/Main.tsx",
           "src/components/Footer/Footer.tsx",
+          "src/components/HeaderDropdown/HeaderDropdown.tsx",
         ],
       },
       {
