@@ -1,20 +1,31 @@
 import * as React from "react";
 import { DxcApplicationLayout } from "@dxc-technology/halstack-react";
+import AppLayoutMainPropsType from "@dxc-technology/halstack-react/layout/types";
 
-interface ApplicationLayoutProps {
-  children?: React.ReactNode;
   /**
-   * Text to be placed next to the hamburger button that toggles the visibility of the sidenav.
+   * We extend teh interface here just to add the uxpinignoreprop
+   * to hide it since we now use children layer nodes in UXPin
    */
-  visibilityToggleLabel?: string;
-  // You can add more props here
+export interface MergeAppLayoutMainPropsType extends AppLayoutMainPropsType {
+  
+  /** @uxpinignoreprop */
+  children: React.ReactNode;
+
+  /** @uxpinignoreprop */
+  footer: React.ReactNode;
+
+  /** @uxpinignoreprop */
+  sidenav: React.ReactNode;
+
+  /** @uxpinignoreprop */
+  header: React.ReactNode;
 }
 
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/layout/
  * @uxpinuseportal
  */
-const ApplicationLayout: React.FC<ApplicationLayoutProps> = ({
+const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
   children,
   visibilityToggleLabel,
 }) => {
