@@ -24,7 +24,7 @@ module.exports = {
       {
         name: "Layout",
         include: [
-          "src/components/ApplicationLayout/ApplicationLayout.jsx",
+          "src/components/ApplicationLayout/ApplicationLayout.tsx",
           "src/components/Header/Header.tsx",
           "src/components/Main/Main.tsx",
           "src/components/Footer/Footer.tsx",

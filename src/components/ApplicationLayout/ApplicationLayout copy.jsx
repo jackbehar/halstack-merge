@@ -10,21 +10,14 @@ const ApplicationLayout = (props) => {
   // Create an object to hold the children of each slot
   const slots = {};
 
-  // Loop through the children of the SlotMachine component
+  // Loop through the children 
   React.Children.forEach(props.children, (child) => {
-    console.log("comp: ", child);
-    // Check if the child is a Slot component
-    // if (child.type === Slot) {
     // Add the child's children to the appropriate slot
     const { name } = child.props;
     slots[name] = child;
-
-    // }
   });
 
-  // Render the slots with their children
   return (
-    <div>
       <div style={{ minWidth: "350px", minHeight: "350px" }}>
         <DxcApplicationLayout
           header={slots.header}
@@ -35,7 +28,6 @@ const ApplicationLayout = (props) => {
           <DxcApplicationLayout.Main>{slots.main}</DxcApplicationLayout.Main>
         </DxcApplicationLayout>
       </div>
-    </div>
   );
 };
 
