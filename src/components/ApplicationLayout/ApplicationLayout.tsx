@@ -7,7 +7,6 @@ import AppLayoutMainPropsType from "@dxc-technology/halstack-react/layout/types"
    * to hide it since we now use children layer nodes in UXPin
    */
 export interface MergeAppLayoutMainPropsType extends AppLayoutMainPropsType {
-  
   /** @uxpinignoreprop */
   children: React.ReactNode;
 
@@ -35,8 +34,8 @@ const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
   // Loop through the children
   React.Children.forEach(children, (child) => {
     // Add the child's children to the appropriate slot
-    const { name } = (child as React.ReactElement).props;
-    slots[name] = child;
+    const { slotName } = (child as React.ReactElement).props;
+    slots[slotName] = child;
   });
 
   return (

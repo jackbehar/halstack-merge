@@ -3,7 +3,7 @@ import Footer from "../Footer";
 export default (
   <Footer
     uxpId="footer"
-    name="footer"
+    slotName="footer"
     bottomLinks= {[
       {
       "text": "Text for the link.",
