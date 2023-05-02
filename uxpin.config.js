@@ -19,6 +19,8 @@ module.exports = {
           "src/components/Heading/Heading.tsx",
           "src/components/TextInput/TextInput.tsx",
           "src/components/Select/Select.tsx",
+          "src/components/ToggleGroup/ToggleGroup.tsx",
+
 
         ],
       },
