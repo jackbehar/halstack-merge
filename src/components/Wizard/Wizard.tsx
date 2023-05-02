@@ -13,7 +13,7 @@ export interface MergeProps extends Props {
 }
 export default function Wizard(props: MergeProps) {
   return (
-    <div>
+    <div style={{display:"grid"}}>
       <DxcWizard {...props} />
     </div>
   );

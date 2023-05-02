@@ -26,6 +26,7 @@ module.exports = {
           "src/components/NavTabs/NavTabs.tsx",
           "src/components/NavTab/NavTab.tsx",
           "src/components/Wizard/Wizard.tsx",
+          "src/components/Paginator/Paginator.tsx",
         ],
       },
       {
