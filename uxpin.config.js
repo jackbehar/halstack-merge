@@ -48,7 +48,7 @@ module.exports = {
         name: "Containers",
         include: [
           "src/components/Flex/Flex.tsx",
-          "src/components/Inset/Inset.js",
+          "src/components/Inset/Inset.tsx",
           "src/components/Bleed/Bleed.js",
           "src/components/Box/Box.js",
         ],
