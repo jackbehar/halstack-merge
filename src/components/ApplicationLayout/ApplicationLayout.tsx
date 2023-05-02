@@ -1,12 +1,13 @@
 import * as React from "react";
 import { DxcApplicationLayout } from "@dxc-technology/halstack-react";
-import AppLayoutMainPropsType from "@dxc-technology/halstack-react/layout/types";
+import AppLayoutPropsType from "@dxc-technology/halstack-react/layout/types";
 
 /**
  * We extend teh interface here just to add the uxpinignoreprop
  * to hide it since we now use children layer nodes in UXPin
  */
-export interface MergeAppLayoutMainPropsType extends AppLayoutMainPropsType {
+export interface MergeAppLayoutPropsType extends Omit<AppLayoutPropsType, "children"> {
+
   /** @uxpinignoreprop */
   children: React.ReactNode;
 
@@ -24,7 +25,7 @@ export interface MergeAppLayoutMainPropsType extends AppLayoutMainPropsType {
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/layout/
  * @uxpinuseportal
  */
-const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
+const ApplicationLayout: React.FC<MergeAppLayoutPropsType> = ({
   children,
   visibilityToggleLabel,
 }) => {

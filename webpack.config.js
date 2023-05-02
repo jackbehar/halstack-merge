@@ -23,24 +23,17 @@ const config = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
-      // {
-      //   test: /\.svg$/,
-      //   exclude: /node_modules/,
-      //   loader: "svg-react-loader",
-      // },
-       // {
-      //   test: /\.svg$/,
-      //   use: [
-      //     {
-      //       loader: "svg-url-loader",
-      //       options: {
-      //         // limit: 10000,
-      //         encoding: "base64",
-
-      //       },
-      //     },
-      //   ],
-      // },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            // Creates `style` nodes from JS strings
+            "style-loader",
+            // Translates CSS into CommonJS
+            "css-loader",
+            // Compiles Sass to CSS
+            "sass-loader",
+          ],
+        },
       // {
       //   test: /\.svg$/i,
       //   issuer: /\.[jt]sx?$/,

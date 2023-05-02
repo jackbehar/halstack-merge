@@ -2,6 +2,7 @@
 import React from 'react';
 import defaultTheme from './theme';
 import { HalstackProvider } from "@dxc-technology/halstack-react";
+import "./styles.scss"
 
 export const ThemeContext = React.createContext({});
 const completeDefaultTheme = defaultTheme;
