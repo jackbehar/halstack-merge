@@ -19,7 +19,7 @@ module.exports = {
         ],
       },
       {
-        name: "Layout",
+        name: "App Layout",
         include: [
           "src/components/ApplicationLayout/ApplicationLayout.tsx",
           "src/components/Header/Header.tsx",
@@ -49,7 +49,7 @@ module.exports = {
         include: [
           "src/components/Flex/Flex.tsx",
           "src/components/Inset/Inset.tsx",
-          "src/components/Bleed/Bleed.js",
+          "src/components/Bleed/Bleed.tsx",
           "src/components/Box/Box.js",
         ],
       },
