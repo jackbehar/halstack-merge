@@ -25,6 +25,7 @@ module.exports = {
           "src/components/QuickNav/QuickNav.tsx",
           "src/components/NavTabs/NavTabs.tsx",
           "src/components/NavTab/NavTab.tsx",
+          "src/components/Wizard/Wizard.tsx",
         ],
       },
       {
