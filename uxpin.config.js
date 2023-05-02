@@ -2,7 +2,7 @@ module.exports = {
   components: {
     categories: [
       {
-        name: "TypeScript components",
+        name: "Components",
         include: [
           "src/components/BulletedList/BulletedList.tsx",
           "src/components/BulletedListItem/BulletedListItem.tsx",
@@ -16,6 +16,16 @@ module.exports = {
           "src/components/Tabs/Tabs.tsx",
           "src/components/Icon/Icon.tsx",
           "src/components/Checkbox/Checkbox.tsx",
+          "src/components/Heading/Heading.tsx",
+        ],
+      },
+      {
+        name: "Containers",
+        include: [
+          "src/components/Flex/Flex.tsx",
+          "src/components/Inset/Inset.tsx",
+          "src/components/Bleed/Bleed.tsx",
+          "src/components/Box/Box.tsx",
         ],
       },
       {
@@ -31,8 +41,6 @@ module.exports = {
           "src/components/SidenavSection/SidenavSection.tsx",
           "src/components/SidenavTitle/SidenavTitle.tsx",
           "src/components/HeaderDropdown/HeaderDropdown.tsx",
-
-
         ],
       },
       {
@@ -41,16 +49,7 @@ module.exports = {
           "src/components/ThemeCustomizer/ThemeCustomizer.js",
           "src/components/TextInput/TextInput.js",
           "src/components/Select/Select.js",
-          "src/components/Heading/Heading.js",
-        ],
-      },
-      {
-        name: "Containers",
-        include: [
-          "src/components/Flex/Flex.tsx",
-          "src/components/Inset/Inset.tsx",
-          "src/components/Bleed/Bleed.tsx",
-          "src/components/Box/Box.tsx",
+
         ],
       },
     ],
