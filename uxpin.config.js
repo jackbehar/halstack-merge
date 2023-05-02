@@ -22,8 +22,7 @@ module.exports = {
           "src/components/ToggleGroup/ToggleGroup.tsx",
           "src/components/Alert/Alert.tsx",
           "src/components/Dropdown/Dropdown.tsx",
-
-
+          "src/components/QuickNav/QuickNav.tsx",
         ],
       },
       {
