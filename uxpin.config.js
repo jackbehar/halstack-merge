@@ -20,6 +20,7 @@ module.exports = {
           "src/components/TextInput/TextInput.tsx",
           "src/components/Select/Select.tsx",
           "src/components/ToggleGroup/ToggleGroup.tsx",
+          "src/components/Alert/Alert.tsx",
 
 
         ],
