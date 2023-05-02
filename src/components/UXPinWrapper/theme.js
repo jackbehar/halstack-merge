@@ -523,7 +523,7 @@ const theme = {
 		"disabledFontColor": "#999999",
 		"focusOutline": "#0095ff",
 		"selectedUnderlineColor": "#5f249f",
-		"dividerColor": "#bfbfbf",
+		"dividerColor": "#ffffff",
 		"fontFamily": "Open Sans, sans-serif",
 		"fontSize": "1rem",
 		"fontStyle": "normal",

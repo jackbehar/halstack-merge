@@ -23,6 +23,8 @@ module.exports = {
           "src/components/Alert/Alert.tsx",
           "src/components/Dropdown/Dropdown.tsx",
           "src/components/QuickNav/QuickNav.tsx",
+          "src/components/NavTabs/NavTabs.tsx",
+          "src/components/NavTab/NavTab.tsx",
         ],
       },
       {
