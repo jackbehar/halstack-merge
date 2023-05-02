@@ -15,6 +15,7 @@ module.exports = {
           "src/components/Dialog/Dialog.tsx",
           "src/components/Tabs/Tabs.tsx",
           "src/components/Icon/Icon.tsx",
+          "src/components/Checkbox/Checkbox.tsx",
         ],
       },
       {
@@ -30,13 +31,14 @@ module.exports = {
           "src/components/SidenavSection/SidenavSection.tsx",
           "src/components/SidenavTitle/SidenavTitle.tsx",
           "src/components/HeaderDropdown/HeaderDropdown.tsx",
+
+
         ],
       },
       {
         name: "JS components",
         include: [
           "src/components/ThemeCustomizer/ThemeCustomizer.js",
-          "src/components/Checkbox/Checkbox.js",
           "src/components/TextInput/TextInput.js",
           "src/components/Flex/Flex.js",
           "src/components/Select/Select.js",
