@@ -2,10 +2,10 @@ import * as React from "react";
 import { DxcApplicationLayout } from "@dxc-technology/halstack-react";
 import AppLayoutMainPropsType from "@dxc-technology/halstack-react/layout/types";
 
-  /**
-   * We extend teh interface here just to add the uxpinignoreprop
-   * to hide it since we now use children layer nodes in UXPin
-   */
+/**
+ * We extend teh interface here just to add the uxpinignoreprop
+ * to hide it since we now use children layer nodes in UXPin
+ */
 export interface MergeAppLayoutMainPropsType extends AppLayoutMainPropsType {
   /** @uxpinignoreprop */
   children: React.ReactNode;
@@ -39,8 +39,8 @@ const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
   });
 
   return (
-    <div>
-    <div style={{ minWidth: "350px", minHeight: "350px" }}>
+
+    <div style={{ height: "100vh", minWidth: "500px", background: "#ffffff" }}>
       <DxcApplicationLayout
         header={slots.header}
         sidenav={slots.sidenav}
@@ -49,7 +49,6 @@ const ApplicationLayout: React.FC<MergeAppLayoutMainPropsType> = ({
       >
         <DxcApplicationLayout.Main>{slots.main}</DxcApplicationLayout.Main>
       </DxcApplicationLayout>
-    </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ export default (
   <Sidenav
     uxpId="sidenav"
     title={<SidenavTitle uxpId="sidenav-title">Sidenav Title</SidenavTitle>}
-    slot="sidenav"
+    slotName="sidenav"
   >
     <SidenavSection uxpId="sidenav-section-1">
       <SidenavGroup uxpId="sidenav-group-1" title="Group title" collapsable>
