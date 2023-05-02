@@ -40,14 +40,14 @@ module.exports = {
         include: [
           "src/components/ThemeCustomizer/ThemeCustomizer.js",
           "src/components/TextInput/TextInput.js",
-          "src/components/Flex/Flex.js",
           "src/components/Select/Select.js",
           "src/components/Heading/Heading.js",
         ],
       },
       {
-        name: "Layout",
+        name: "Containers",
         include: [
+          "src/components/Flex/Flex.tsx",
           "src/components/Inset/Inset.js",
           "src/components/Bleed/Bleed.js",
           "src/components/Box/Box.js",
