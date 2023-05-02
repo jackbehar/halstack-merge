@@ -50,7 +50,7 @@ module.exports = {
           "src/components/Flex/Flex.tsx",
           "src/components/Inset/Inset.tsx",
           "src/components/Bleed/Bleed.tsx",
-          "src/components/Box/Box.js",
+          "src/components/Box/Box.tsx",
         ],
       },
     ],
