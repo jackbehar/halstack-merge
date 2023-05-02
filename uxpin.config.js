@@ -18,6 +18,7 @@ module.exports = {
           "src/components/Checkbox/Checkbox.tsx",
           "src/components/Heading/Heading.tsx",
           "src/components/TextInput/TextInput.tsx",
+          "src/components/Select/Select.tsx",
 
         ],
       },
@@ -46,11 +47,9 @@ module.exports = {
         ],
       },
       {
-        name: "JS components",
+        name: "Utilities",
         include: [
           "src/components/ThemeCustomizer/ThemeCustomizer.js",
-          "src/components/Select/Select.js",
-
         ],
       },
     ],
