@@ -1,7 +1,7 @@
-import Paginator from "../Paginator";
+import DxcPaginator from "../Paginator";
 
 export default (
-  <Paginator
+  <DxcPaginator
     uxpId="paginator"
     itemsPerPage={5}
     itemsPerPageOptions={[5, 10, 15]}

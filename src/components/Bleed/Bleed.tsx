@@ -1,4 +1,4 @@
-import { DxcBleed } from "@dxc-technology/halstack-react";
+import { DxcBleed as DxcBleedUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/bleed/types";
 
 /**
@@ -8,12 +8,12 @@ import Props from "@dxc-technology/halstack-react/bleed/types";
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
  */
-const Bleed = (props:Props) => {
+const DxcBleed = (props:Props) => {
   return (
     <div style={{ display: "grid" }}>
-      <DxcBleed {...props} />
+      <DxcBleedUXP {...props} />
     </div>
   );
 };
 
-export default Bleed;
+export default DxcBleed;

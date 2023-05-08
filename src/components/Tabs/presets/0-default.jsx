@@ -1,7 +1,7 @@
-import Tabs from "../Tabs";
+import DxcTabsUXP from "../Tabs";
 
 export default (
-  <Tabs
+  <DxcTabsUXP
     uxpId="tabs"
     tabs={[
       {

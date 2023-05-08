@@ -6,7 +6,7 @@ interface IconProps {
   icon?: IconValues;
 }
 
-export default function Icon({ icon }: IconProps): ReactElement | null {
+export default function DxcIcon({ icon }: IconProps): ReactElement | null {
   return icon ? (
     React.createElement(Icons[icon], {
       height: "30px",

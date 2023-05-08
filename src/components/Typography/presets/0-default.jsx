@@ -1,3 +1,3 @@
-import Typography from "../Typography";
+import DxcTypography from "../Typography";
 
-export default <Typography uxpId="typography">Hello world</Typography>;
+export default <DxcTypography uxpId="typography">Hello world</DxcTypography>;

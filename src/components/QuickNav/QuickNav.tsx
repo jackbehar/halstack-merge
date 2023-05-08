@@ -1,13 +1,13 @@
-import { DxcQuickNav } from "@dxc-technology/halstack-react";
+import { DxcQuickNav as DxcQuickNavUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/quick-nav/types";
 
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/quick-nav/
  */
 
-export default function QuickNav(props: Props) {
+export default function DxcQuickNav(props: Props) {
   return (
-      <DxcQuickNav {...props} />
+      <DxcQuickNavUXP {...props} />
   );
 }
 

@@ -1,7 +1,7 @@
-import DateInput from "../DateInput";
+import DxcDateInput from "../DateInput";
 
 export default (
-  <DateInput
+  <DxcDateInput
     uxpId="date"
     label="Default label"
     size="fillParent"

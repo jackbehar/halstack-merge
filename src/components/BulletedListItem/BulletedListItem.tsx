@@ -1,12 +1,12 @@
 import React from "react";
-import { DxcBulletedList } from "@dxc-technology/halstack-react";
+import { DxcBulletedList as DxcBulletedListUXP } from "@dxc-technology/halstack-react";
 
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/bulleted-list/
  */
 
-export default function BulletedListItem(props: { children: React.ReactNode }) {
-  return (<div><DxcBulletedList.Item>{props.children}</DxcBulletedList.Item></div>)
+export default function DxcBulletedListItem(props: { children: React.ReactNode }) {
+  return (<div><DxcBulletedListUXP.Item>{props.children}</DxcBulletedListUXP.Item></div>)
 }
 
 

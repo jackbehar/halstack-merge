@@ -1,6 +1,6 @@
 import * as React from "react";
-import Box from "../Box";
+import DxcBox from "../Box";
 
 export default (
-  <Box uxpId="Box">Add components here</Box>
+  <DxcBox uxpId="Box">Add components here</DxcBox>
 );

@@ -1,4 +1,4 @@
-import { DxcInset } from "@dxc-technology/halstack-react";
+import { DxcInset as DxcInsetUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/inset/types";
 
 /**
@@ -8,9 +8,9 @@ import Props from "@dxc-technology/halstack-react/inset/types";
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
  */
-const Inset = (props: Props) => {
+const DxcInset = (props: Props) => {
   return (
-    <DxcInset {...props} />
+    <DxcInsetUXP {...props} />
   );
 }
-export default Inset;
+export default DxcInset;

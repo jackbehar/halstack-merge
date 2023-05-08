@@ -1,81 +1,78 @@
-import Sidenav from "../Sidenav";
-import SidenavTitle from "../../SidenavTitle/SidenavTitle";
-import SidenavGroup from "../../SidenavGroup/SidenavGroup";
-import SidenavSection from "../../SidenavSection/SidenavSection";
-import SidenavLink from "../../SidenavLink/SidenavLink";
+import DxcSidenav from "../Sidenav";
+import DxcSidenavTitle from "../../SidenavTitle/SidenavTitle";
+import DxcSidenavGroup from "../../SidenavGroup/SidenavGroup";
+import DxcSidenavSection from "../../SidenavSection/SidenavSection";
+import DxcSidenavLink from "../../SidenavLink/SidenavLink";
 
 export default (
-  <Sidenav
-    uxpId="sidenav"
-    title={<SidenavTitle uxpId="sidenav-title">Sidenav Title</SidenavTitle>}
-    slotName="sidenav"
-  >
-    <SidenavSection uxpId="sidenav-section-1">
-      <SidenavGroup uxpId="sidenav-group-1" title="Group title" collapsable>
-        <SidenavLink uxpId="sidenav-link-1" href="#">
+  <DxcSidenav uxpId="sidenav" slotName="sidenav">
+    <DxcSidenavTitle uxpId="sidenav-title">Sidenav Title</DxcSidenavTitle>
+    <DxcSidenavSection uxpId="sidenav-section-1">
+      <DxcSidenavGroup uxpId="sidenav-group-1" title="Group title" collapsable>
+        <DxcSidenavLink uxpId="sidenav-link-1" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-2" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-2" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-3" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-3" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-4" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-4" href="#">
           Lorem ipsum
-        </SidenavLink>
-      </SidenavGroup>
-      <SidenavGroup uxpId="sidenav-group-2" title="Group title">
-        <SidenavLink uxpId="sidenav-link-5" href="#">
+        </DxcSidenavLink>
+      </DxcSidenavGroup>
+      <DxcSidenavGroup uxpId="sidenav-group-2" title="Group title">
+        <DxcSidenavLink uxpId="sidenav-link-5" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-6" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-6" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-7" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-7" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-8" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-8" href="#">
           Lorem ipsum
-        </SidenavLink>
-      </SidenavGroup>
-    </SidenavSection>
+        </DxcSidenavLink>
+      </DxcSidenavGroup>
+    </DxcSidenavSection>
 
-    <SidenavSection uxpId="sidenav-section-2">
-      <SidenavLink uxpId="sidenav-link-9" href="#">
+    <DxcSidenavSection uxpId="sidenav-section-2">
+      <DxcSidenavLink uxpId="sidenav-link-9" href="#">
         Lorem ipsum
-      </SidenavLink>
-      <SidenavLink uxpId="sidenav-link-10" href="#">
+      </DxcSidenavLink>
+      <DxcSidenavLink uxpId="sidenav-link-10" href="#">
         Lorem ipsum
-      </SidenavLink>
-      <SidenavGroup uxpId="sidenav-group-3" title="Group title" collapsable>
-        <SidenavLink uxpId="sidenav-link-11" href="#">
+      </DxcSidenavLink>
+      <DxcSidenavGroup uxpId="sidenav-group-3" title="Group title" collapsable>
+        <DxcSidenavLink uxpId="sidenav-link-11" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-12" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-12" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-13" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-13" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-14" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-14" href="#">
           Lorem ipsum
-        </SidenavLink>
-      </SidenavGroup>
-      <SidenavGroup uxpId="sidenav-group-4" title="Group title" collapsable>
-        <SidenavLink uxpId="sidenav-link-15" href="#">
+        </DxcSidenavLink>
+      </DxcSidenavGroup>
+      <DxcSidenavGroup uxpId="sidenav-group-4" title="Group title" collapsable>
+        <DxcSidenavLink uxpId="sidenav-link-15" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-16" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-16" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-17" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-17" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-18" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-18" href="#">
           Lorem ipsum
-        </SidenavLink>
-      </SidenavGroup>
-    </SidenavSection>
-  </Sidenav>
+        </DxcSidenavLink>
+      </DxcSidenavGroup>
+    </DxcSidenavSection>
+  </DxcSidenav>
 );

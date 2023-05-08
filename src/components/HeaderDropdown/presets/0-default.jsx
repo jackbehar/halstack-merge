@@ -1,4 +1,4 @@
-import HeaderDropdown from "../HeaderDropdown";
+import DxcHeaderDropdown from "../HeaderDropdown";
 
 const options = [
   {
@@ -16,5 +16,5 @@ const options = [
 ];
 
 export default (
-  <HeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/>
+  <DxcHeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/>
 );

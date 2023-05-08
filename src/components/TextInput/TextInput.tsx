@@ -1,4 +1,4 @@
-import { DxcTextInput } from "@dxc-technology/halstack-react";
+import { DxcTextInput as DxcTextInputUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/text-input/types";
 
 
@@ -9,10 +9,10 @@ import Props from "@dxc-technology/halstack-react/text-input/types";
  * @uxpinwrappers
  * SkipContainerWrapper
  */
-export default function TextInput(props:Props) {
+export default function DxcTextInput(props:Props) {
   return (
     <div style={{ display: "grid" }}>
-      <DxcTextInput {...props} />
+      <DxcTextInputUXP {...props} />
     </div>
   );
 }

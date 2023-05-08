@@ -1,3 +1,3 @@
-import Dialog from "../Dialog";
+import DxcDialog from "../Dialog";
 
-export default <Dialog open={true} uxpId="dialog">Hello world</Dialog>;
+export default <DxcDialog open={true} uxpId="dialog">Hello world</DxcDialog>;

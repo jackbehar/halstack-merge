@@ -1,8 +1,8 @@
 import * as React from "react";
-import Select from "../Select";
+import DxcSelect from "../Select";
 
 export default (
-  <Select
+  <DxcSelect
     uxpId="button"
     label="Select your favorite city"
     placeholder="Choose a city"
@@ -25,5 +25,5 @@ export default (
         value: "roma",
       },
     ]}
-  ></Select>
+  ></DxcSelect>
 );

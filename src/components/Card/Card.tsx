@@ -1,5 +1,5 @@
 import React from "react";
-import { DxcCard } from "@dxc-technology/halstack-react";
+import { DxcCard as DxcCardUXP } from "@dxc-technology/halstack-react";
 import CardPropsType from "@dxc-technology/halstack-react/card/types";
 
 /**
@@ -9,6 +9,6 @@ import CardPropsType from "@dxc-technology/halstack-react/card/types";
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
  */
-export default function Card(props: CardPropsType) {
-  return <div><DxcCard {...props} /></div>;
+export default function DxcCard(props: CardPropsType) {
+  return <div><DxcCardUXP {...props} /></div>;
 }

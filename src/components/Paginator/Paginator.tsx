@@ -1,4 +1,4 @@
-import { DxcPaginator } from "@dxc-technology/halstack-react";
+import { DxcPaginator as DxcPaginatorUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/paginator/types";
 
 /**
@@ -12,9 +12,9 @@ export interface MergeProps extends Props {
   currentPage?: number;
 }
 
-export default function Paginator(props: MergeProps) {
+export default function DxcPaginator(props: MergeProps) {
   return (
-      <DxcPaginator {...props} />
+      <DxcPaginatorUXP {...props} />
   );
 }
 

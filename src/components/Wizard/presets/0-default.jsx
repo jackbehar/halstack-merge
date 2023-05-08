@@ -1,7 +1,7 @@
-import Wizard from "../Wizard";
+import DxcWizard from "../Wizard";
 
 export default (
-  <Wizard
+  <DxcWizard
     uxpId="wizard"
     steps={[
       {

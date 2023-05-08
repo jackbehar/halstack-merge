@@ -22,6 +22,6 @@ type SidenavGroupPropsType = {
   icon?: string | SVG;
 };
 
-export default function SidenavGroup(props: SidenavGroupPropsType) {
+export default function DxcSidenavGroup(props: SidenavGroupPropsType) {
   return <DxcApplicationLayout.SideNav.Group {...props} />;
 }

@@ -1,4 +1,4 @@
-import ToggleGroup from "../ToggleGroup";
+import DxcToggleGroup from "../ToggleGroup";
 
 const options = [
   {
@@ -16,9 +16,9 @@ const options = [
 ];
 
 export default (
-  <ToggleGroup
+  <DxcToggleGroup
     uxpId="text-input"
     label="Choose a social network"
     options={options}
-  ></ToggleGroup>
+  ></DxcToggleGroup>
 );

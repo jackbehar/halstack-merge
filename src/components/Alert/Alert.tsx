@@ -1,6 +1,6 @@
-import { DxcAlert } from "@dxc-technology/halstack-react";
+import { DxcAlert as DxcAlertUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/alert/types";
 
-export default function Alert(props: Props) {
-  return <div style={{ display: "grid" }}><DxcAlert {...props} /></div>;
+export default function DxcAlert(props: Props) {
+  return <div style={{ display: "grid" }}><DxcAlertUXP {...props} /></div>;
 }

@@ -34,6 +34,6 @@ type SidenavLinkPropsType = {
   onClick?: ($event: any) => void;
 };
 
-export default function SidenavLink(props: SidenavLinkPropsType) {
+export default function DxcSidenavLink(props: SidenavLinkPropsType) {
   return <DxcApplicationLayout.SideNav.Link {...props} />;
 }

@@ -1,8 +1,8 @@
 import * as React from "react";
-import QuickNav from "../QuickNav";
+import DxcQuickNav from "../QuickNav";
 
 export default (
-  <QuickNav
+  <DxcQuickNav
     uxpId="quick-nav"
     title="Contents"
     links={[
@@ -23,5 +23,5 @@ export default (
         ],
       },
     ]}
-  ></QuickNav>
+  ></DxcQuickNav>
 );

@@ -1,6 +1,6 @@
 import * as React from "react";
-import Inset from "../Inset";
+import DxcInset from "../Inset";
 
 export default (
-  <Inset uxpId="inset">Add components here</Inset>
+  <DxcInset uxpId="inset">Add components here</DxcInset>
 );

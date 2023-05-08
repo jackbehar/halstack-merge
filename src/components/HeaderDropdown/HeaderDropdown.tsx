@@ -18,7 +18,7 @@ export interface MergeHeaderDropdownType {
 /**
  * Clone DxcApplicationLayout.Header so that we can append a children prop, to be used as content
  */
-export default function HeaderDropdown(props: MergeHeaderDropdownType) {
+export default function DxcHeaderDropdown(props: MergeHeaderDropdownType) {
   return (
     <DxcApplicationLayout.Header.Dropdown {...props}/>
   )

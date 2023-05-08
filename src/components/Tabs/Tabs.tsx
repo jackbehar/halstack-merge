@@ -1,5 +1,5 @@
 import React from 'react';
-import { DxcTabs } from "@dxc-technology/halstack-react";
+import { DxcTabs as DxcTabsUXP } from "@dxc-technology/halstack-react";
 import TabsPropsType from "@dxc-technology/halstack-react/tabs/types";
 // import { ReactComponent as YourSvg } from '../../icons/arrow-down.svg';
 // import MyImageSvg from '../../icons/arrow-down.svg';
@@ -14,12 +14,12 @@ export interface MergeTabsPropsType extends TabsPropsType {
 /**
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/tabs/
  */
-export default function Tabs(props: MergeTabsPropsType) {
+export default function DxcTabs(props: MergeTabsPropsType) {
 
 
   return (
     <div style={{display:"grid"}}>
-      <DxcTabs
+      <DxcTabsUXP
         {...props}
          />
     </div>

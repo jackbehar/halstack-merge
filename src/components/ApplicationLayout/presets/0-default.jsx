@@ -1,10 +1,11 @@
-import ApplicationLayout from "../ApplicationLayout";
-import Main from "../../Main/Main";
-import Sidenav from "../../Sidenav/Sidenav";
-import SidenavLink from "../../SidenavLink/SidenavLink";
-import SidenavGroup from "../../SidenavGroup/SidenavGroup";
-import Header from "../../Header/Header";
-import  HeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
+import DxcApplicationLayout from "../ApplicationLayout";
+import DxcMain from "../../Main/Main";
+import DxcSidenav from "../../Sidenav/Sidenav";
+import DxcSidenavLink from "../../SidenavLink/SidenavLink";
+import DxcSidenavGroup from "../../SidenavGroup/SidenavGroup";
+import DxcHeader from "../../Header/Header";
+import DxcHeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
+import DxcSidenavTitle from "../../SidenavTitle/SidenavTitle";
 
 const options = [
   {
@@ -22,28 +23,31 @@ const options = [
 ];
 
 export default (
-  <ApplicationLayout uxpId="application-layout">
-    <Header uxpId="header" slotName="header" underlined>
-    <HeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/>
-    </Header>
-    <Sidenav uxpId="sidenav" slotName="sidenav">
-      <SidenavGroup uxpId="sidenav-group-1" title="Group title" collapsable>
-        <SidenavLink uxpId="sidenav-link-1" href="#">
+  <DxcApplicationLayout uxpId="dxc-application-layout">
+    <DxcHeader uxpId="header" slotName="header" underlined>
+    <DxcHeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/>
+    </DxcHeader>
+    <DxcSidenav uxpId="sidenav" slotName="sidenav">
+    <DxcSidenavTitle uxpId="sidenav-title">
+    Sidenav Title
+  </DxcSidenavTitle>
+      <DxcSidenavGroup uxpId="sidenav-group-1" title="Group title" collapsable>
+        <DxcSidenavLink uxpId="sidenav-link-1" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-2" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-2" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-3" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-3" href="#">
           Lorem ipsum
-        </SidenavLink>
-        <SidenavLink uxpId="sidenav-link-4" href="#">
+        </DxcSidenavLink>
+        <DxcSidenavLink uxpId="sidenav-link-4" href="#">
           Lorem ipsum
-        </SidenavLink>
-      </SidenavGroup>
-    </Sidenav>
-    <Main uxpId="main" slotName="main">
+        </DxcSidenavLink>
+      </DxcSidenavGroup>
+    </DxcSidenav>
+    <DxcMain uxpId="main" slotName="main">
       Main
-    </Main>
-  </ApplicationLayout>
+    </DxcMain>
+  </DxcApplicationLayout>
 );

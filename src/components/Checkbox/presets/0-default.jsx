@@ -1,11 +1,11 @@
 import * as React from "react";
-import Checkbox from "../Checkbox";
+import DxcCheckboxUXP from "../Checkbox";
 
 export default (
-  <Checkbox
+  <DxcCheckboxUXP
     uxpId="checkbox"
     label="I am a checkbox!"
     labelPosition="after"
     size="medium">
-  </Checkbox>
+  </DxcCheckboxUXP>
 );

@@ -1,5 +1,5 @@
-import Header from "../Header";
-import HeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
+import DxcHeader from "../Header";
+import DxcHeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
 const options = [
   {
     value: 1,
@@ -16,11 +16,11 @@ const options = [
 ];
 
 export default (
-  <Header uxpId="header" slotName="header" underlined>
-    <HeaderDropdown
+  <DxcHeader uxpId="header" slotName="header" underlined>
+    <DxcHeaderDropdown
       uxpId="header-dropdown"
       label="Select OS"
       options={options}
     />
-  </Header>
+  </DxcHeader>
 );

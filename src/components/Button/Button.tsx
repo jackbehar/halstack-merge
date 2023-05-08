@@ -1,5 +1,5 @@
 import React from 'react';
-import { DxcButton } from "@dxc-technology/halstack-react";
+import { DxcButton as DxcButtonUXP } from "@dxc-technology/halstack-react";
 import ButtonPropsType from "@dxc-technology/halstack-react/button/types";
 import Icon from '../Icon/Icon'
 import { IconValues } from '../Icon/types';
@@ -14,7 +14,7 @@ export interface MergeButtonPropsType extends ButtonPropsType {
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/button/
  */
 
-export default function Button(props: MergeButtonPropsType) {
+export default function DxcButton(props: MergeButtonPropsType) {
 
   const [iconState, setIconState] = React.useState(props.icon);
   
@@ -25,5 +25,5 @@ export default function Button(props: MergeButtonPropsType) {
 
   const selectedIcon = <Icon icon={iconState}/>
 
-  return <div><DxcButton {...props} icon={props.icon && selectedIcon } /></div>;
+  return <div><DxcButtonUXP {...props} icon={props.icon && selectedIcon } /></div>;
 }

@@ -1,4 +1,4 @@
-import Dropdown from "../Dropdown";
+import DxcDropdownUXP from "../Dropdown";
 
 const options = [
   {
@@ -16,5 +16,5 @@ const options = [
 ];
 
 export default (
-  <Dropdown uxpId="dropdown" label="Select OS" options={options}/>
+  <DxcDropdownUXP uxpId="dropdown" label="Select OS" options={options}/>
 );

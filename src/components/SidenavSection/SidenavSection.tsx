@@ -8,7 +8,7 @@ type SidenavSectionPropsType = {
   children: ReactNode;
 };
 
-export default function SidenavSection({ children }: SidenavSectionPropsType) {
+export default function DxcSidenavSection({ children }: SidenavSectionPropsType) {
   return (
     <DxcApplicationLayout.SideNav.Section>
       {children}

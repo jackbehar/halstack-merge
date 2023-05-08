@@ -1,6 +1,6 @@
 import * as React from "react";
-import Chip from "../Chip";
+import DxcChip from "../Chip";
 
 export default (
-  <Chip uxpId="chip" label="I'm Chip!"/>
+  <DxcChip uxpId="chip" label="I'm Chip!"/>
 );

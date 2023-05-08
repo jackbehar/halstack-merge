@@ -1,3 +1,3 @@
-import NavTab from "../NavTab";
+import DxcNavTab from "../NavTab";
 
-export default <NavTab uxpId="nav-tab">Tab</NavTab>;
+export default <DxcNavTab uxpId="nav-tab">Tab</DxcNavTab>;

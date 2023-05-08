@@ -1,4 +1,4 @@
-import { DxcCheckbox } from "@dxc-technology/halstack-react";
+import { DxcCheckbox as DxcCheckboxUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/checkbox/types";
 
 /**
@@ -8,8 +8,8 @@ import Props from "@dxc-technology/halstack-react/checkbox/types";
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
  */
-export default function Checkbox(props: Props) {
-  return <div><DxcCheckbox {...props} /></div>;
+export default function DxcCheckbox(props: Props) {
+  return <div><DxcCheckboxUXP {...props} /></div>;
 }
 
 

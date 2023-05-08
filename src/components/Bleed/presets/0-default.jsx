@@ -1,6 +1,6 @@
 import * as React from "react";
-import Bleed from "../Bleed";
+import DxcBleed from "../Bleed";
 
 export default (
-  <Bleed uxpId="bleed">Add components here</Bleed>
+  <DxcBleed uxpId="bleed">Add components here</DxcBleed>
 );

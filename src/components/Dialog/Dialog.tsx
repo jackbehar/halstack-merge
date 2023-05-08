@@ -1,5 +1,5 @@
 import React from 'react';
-import { DxcDialog } from "@dxc-technology/halstack-react";
+import { DxcDialog as DxcDialogUXP } from "@dxc-technology/halstack-react";
 import DialogPropsType from "@dxc-technology/halstack-react/dialog/types";
 
 export interface MergeDialogPropsType extends DialogPropsType {
@@ -14,7 +14,7 @@ export interface MergeDialogPropsType extends DialogPropsType {
  * @uxpindocurl https://developer.dxc.com/halstack/9/components/dialog/
 * @uxpinuseportal
  */
-export default function Dialog(props: MergeDialogPropsType) {
+export default function DxcDialog(props: MergeDialogPropsType) {
   // const [open, setOpen] = React.useState(props.open);
 
 
@@ -53,7 +53,7 @@ export default function Dialog(props: MergeDialogPropsType) {
 
       <div id="dialogContainer" style={{ minWidth: "768px", minHeight: "600px" }}> {/* DIALOG WILL MOUNT IN THIS DIV */}
 
-        <DxcDialog {...props}>{props.children}</DxcDialog>
+        <DxcDialogUXP {...props}>{props.children}</DxcDialogUXP>
 
       </div>
 

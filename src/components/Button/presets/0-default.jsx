@@ -1,10 +1,10 @@
 import * as React from "react";
-import Button from "../Button";
+import DxcButton from "../Button";
 
 export default (
-  <Button
+  <DxcButton
     uxpId="button"
     label="Click Me!"
     size="fitContent">
-  </Button>
+  </DxcButton>
 );

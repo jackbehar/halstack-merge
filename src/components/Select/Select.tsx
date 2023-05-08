@@ -1,4 +1,4 @@
-import { DxcSelect } from "@dxc-technology/halstack-react";
+import { DxcSelect as DxcSelectUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/select/types";
 
 /**
@@ -8,10 +8,10 @@ import Props from "@dxc-technology/halstack-react/select/types";
  * @uxpinwrappers
  * SkipContainerWrapper
  */
-export default function Select(props: Props) {
+export default function DxcSelect(props: Props) {
   return (
     <div style={{ display: "grid" }}>
-      <DxcSelect {...props} />
+      <DxcSelectUXP {...props} />
     </div>
   );
 }

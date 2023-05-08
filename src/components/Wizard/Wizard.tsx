@@ -1,4 +1,4 @@
-import { DxcWizard } from "@dxc-technology/halstack-react";
+import { DxcWizard as DxcWizardUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/wizard/types";
 
 /**
@@ -11,10 +11,10 @@ export interface MergeProps extends Props {
    */
   currentStep?: number;
 }
-export default function Wizard(props: MergeProps) {
+export default function DxcWizard(props: MergeProps) {
   return (
     <div style={{display:"grid"}}>
-      <DxcWizard {...props} />
+      <DxcWizardUXP {...props} />
     </div>
   );
 }

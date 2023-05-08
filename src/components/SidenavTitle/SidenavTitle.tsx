@@ -8,7 +8,7 @@ type SidenavTitlePropsType = {
   children: ReactNode;
 };
 
-export default function SidenavTitle({
+export default function DxcSidenavTitle({
   children = "Title",
 }: SidenavTitlePropsType) {
   return (

@@ -1,4 +1,4 @@
-import { DxcBox } from "@dxc-technology/halstack-react";
+import { DxcBox as DxcBoxUXP } from "@dxc-technology/halstack-react";
 import Props from "@dxc-technology/halstack-react/box/types";
 
 /**
@@ -8,12 +8,12 @@ import Props from "@dxc-technology/halstack-react/box/types";
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
  */
-const Box = (props:Props) => {
+const DxcBox = (props:Props) => {
   return (
     <div style={{ display: "grid" }}>
-      <DxcBox {...props} />
+      <DxcBoxUXP {...props} />
     </div>
   );
 };
 
-export default Box;
+export default DxcBox;

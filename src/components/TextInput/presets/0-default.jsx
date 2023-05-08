@@ -1,10 +1,10 @@
 import * as React from "react";
-import TextInput from "../TextInput";
+import DxcTextInputUXP from "../TextInput";
 
 export default (
-  <TextInput
+  <DxcTextInputUXP
     uxpId="text-input"
     label="Enter your name"
     size="small">
-  </TextInput>
+  </DxcTextInputUXP>
 );

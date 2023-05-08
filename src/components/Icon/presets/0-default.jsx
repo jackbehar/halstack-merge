@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon from '../Icon';
+import DxcIcon from '../Icon';
 
 export default (
-  <Icon
+  <DxcIcon
     icon="ArrowDown"
     uxpId="icon1"
   />

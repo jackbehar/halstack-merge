@@ -1,7 +1,7 @@
-import Footer from "../Footer";
+import DxcFooter from "../Footer";
 
 export default (
-  <Footer
+  <DxcFooter
     uxpId="footer"
     slotName="footer"
     bottomLinks= {[
@@ -15,5 +15,5 @@ export default (
     ]}
   >
    
-  </Footer>
+  </DxcFooter>
 );

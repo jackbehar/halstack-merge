@@ -1,7 +1,7 @@
-import BulletedListItem from "../BulletedListItem";
+import DxcBulletedListItem from "../BulletedListItem";
 
 export default (
-  <BulletedListItem uxpId="bulleted-list-item">
+  <DxcBulletedListItem uxpId="bulleted-list-item">
     I am a bulleted item
-  </BulletedListItem>
+  </DxcBulletedListItem>
 );

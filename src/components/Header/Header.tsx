@@ -13,7 +13,7 @@ export interface MergeHeaderPropsType extends Omit<HeaderPropsType, "content">{
 /**
  * Clone DxcApplicationLayout.Header so that we can append a children prop, to be used as content
  */
-export default function Header(props: MergeHeaderPropsType) {
+export default function DxcHeader(props: MergeHeaderPropsType) {
   return (
     React.cloneElement(<DxcApplicationLayout.Header content={props.children}/>, props, null)  )
 }

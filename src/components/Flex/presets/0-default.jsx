@@ -1,20 +1,18 @@
 import * as React from "react";
-import Flex from "../Flex";
-import Button from "../../Button/Button";
+import DxcFlex from "../Flex";
+import DxcButton from "../../Button/Button";
 
 export default (
-  <Flex
+  <DxcFlex
     uxpId="flex-container"
-    gap={{
-      rowGap: "5rem",
-      columnGap: "5rem",
-    }}
+    gap="10px"
+    justifyContent="space-between"
   >
-    <Flex uxpId="flex-1">
-      <Button uxpId="button-1" label="Button 1" />
-    </Flex>
-    <Flex uxpId="flex-2">
-      <Button uxpId="button-2" label="Button 2" />
-    </Flex>
-  </Flex>
+    <DxcFlex uxpId="flex-1">
+      <DxcButton uxpId="button-1" label="Button 1" />
+    </DxcFlex>
+    <DxcFlex uxpId="flex-2">
+      <DxcButton uxpId="button-2" label="Button 2" />
+    </DxcFlex>
+  </DxcFlex>
 );
