@@ -29,6 +29,12 @@ module.exports = {
           "src/components/NavTab/NavTab.tsx",
           "src/components/Wizard/Wizard.tsx",
           "src/components/Paginator/Paginator.tsx",
+          "src/components/Table/Table.tsx",
+          "src/components/Table/TableHead/TableHead.tsx",
+          "src/components/Table/TableHeader/TableHeader.tsx",
+          "src/components/Table/TableBody/TableBody.tsx",
+          "src/components/Table/TableRow/TableRow.tsx",
+          "src/components/Table/TableCell/TableCell.tsx",
         ],
       },
       {
