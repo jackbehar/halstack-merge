@@ -29,6 +29,7 @@ module.exports = {
           "src/components/NavTab/NavTab.tsx",
           "src/components/Wizard/Wizard.tsx",
           "src/components/Paginator/Paginator.tsx",
+          "src/components/ResultsetTable/ResultsetTable.tsx",
           "src/components/Table/Table.tsx",
           "src/components/Table/TableHead/TableHead.tsx",
           "src/components/Table/TableHeader/TableHeader.tsx",
