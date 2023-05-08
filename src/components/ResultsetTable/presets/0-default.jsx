@@ -1,5 +1,5 @@
 import * as React from "react";
-import ResultsetTable from "../ResultsetTable";
+import DxcResultsetTable from "../ResultsetTable";
 import Button from "../../Button/Button";
 import Typography from "../../Typography/Typography";
 
@@ -79,9 +79,9 @@ const rows = [
 ];
 
 export default (
-  <ResultsetTable
+  <DxcResultsetTable
     uxpId="resultsettable"
     columns={columns}
     rows={rows}
-  ></ResultsetTable>
+  ></DxcResultsetTable>
 );
