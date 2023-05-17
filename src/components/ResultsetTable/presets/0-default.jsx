@@ -1,6 +1,6 @@
 import * as React from "react";
 import DxcResultsetTable from "../ResultsetTable";
-import Button from "../../Button/Button";
+import DxcButton from "../../Button/Button";
 import Typography from "../../Typography/Typography";
 
 const deleteIcon = (
@@ -25,56 +25,40 @@ const columns = [
 
 const rows = [
   [
-    { displayValue: "001" },
-    { displayValue: "Peter" },
-    { displayValue: "Miami" },
-    {
-      displayValue: (
-        <div>
-          <Button uxpId="button6" label="label" />
-        </div>
-      ),
-    },
+    { displayValue: "001"},
+    { displayValue: "Peter"},
+    { displayValue: "Miami"},
+    { displayValue: <DxcButton icon={deleteIcon} uxpId="buuu"/> },
   ],
   [
-    { displayValue: "002" },
-    { displayValue: "Louis" },
-    { displayValue: "London" },
-    {
-      displayValue: <Typography uxpId="test1">test</Typography>,
-    },
+    { displayValue: "002"},
+    { displayValue: "Louis"},
+    { displayValue: "London"},
+    { displayValue: <DxcButton icon={deleteIcon} /> },
   ],
   [
-    { displayValue: "003" },
-    { displayValue: "Lana" },
-    { displayValue: "Amsterdam" },
-    {
-      displayValue: <Typography uxpId="test2">test</Typography>,
-    },
+    { displayValue: "003"},
+    { displayValue: "Lana"},
+    { displayValue: "Amsterdam"},
+    { displayValue: <DxcButton icon={deleteIcon} /> },
   ],
   [
-    { displayValue: "004" },
-    { displayValue: "Rick" },
-    { displayValue: "London" },
-    {
-      displayValue: <Typography uxpId="test3">test</Typography>,
-    },
+    { displayValue: "004"},
+    { displayValue: "Rick"},
+    { displayValue: "London"},
+    { displayValue: <DxcButton icon={deleteIcon} /> },
   ],
   [
-    { displayValue: "005" },
-    { displayValue: "Mark" },
-    { displayValue: "Miami" },
-    {
-      displayValue: <Typography uxpId="test4">test</Typography>,
-    },
+    { displayValue: "005"},
+    { displayValue: "Mark"},
+    { displayValue: "Miami"},
+    { displayValue: <DxcButton icon={deleteIcon} /> },
   ],
   [
-    { displayValue: "006" },
-    { displayValue: "Cris" },
-    { displayValue: "Paris" },
-    {
-      displayValue: <Typography uxpId="test5">test</Typography>,
-    },
+    { displayValue: "006"},
+    { displayValue: "Cris"},
+    { displayValue: "Paris"},
+    { displayValue: <DxcButton icon={deleteIcon} /> },
   ],
 ];
 
