@@ -7,7 +7,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.4",
-    "@dxc-technology/halstack-react": "^9.0.0",
+    "@dxc-technology/halstack-react": "9.1.0",
     "@svgr/webpack": "^7.0.0",
     "@types/react-dom": "^18.2.0",
     "@uxpin/merge-cli": "3.0.1",
