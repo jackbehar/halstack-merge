@@ -9,6 +9,7 @@ module.exports = {
           "src/components/Chip/Chip.tsx",
           "src/components/DateInput/DateInput.tsx",
           "src/components/Button/Button.tsx",
+          "src/components/Select/Select.tsx",
           "src/components/Card/Card.tsx",
           "src/components/Accordion/Accordion.tsx",
           // "src/components/AccordionGroup/AccordionGroup.tsx",
@@ -20,9 +21,6 @@ module.exports = {
           "src/components/Checkbox/Checkbox.tsx",
           "src/components/Heading/Heading.tsx",
           "src/components/TextInput/TextInput.tsx",
-          "src/components/Grid/Grid.tsx",
-          'src/components/Grid/GridItem/GridItem.tsx',
-
           "src/components/ToggleGroup/ToggleGroup.tsx",
           "src/components/Alert/Alert.tsx",
           "src/components/Dropdown/Dropdown.tsx",
@@ -47,6 +45,8 @@ module.exports = {
           "src/components/Inset/Inset.tsx",
           "src/components/Bleed/Bleed.tsx",
           "src/components/Box/Box.tsx",
+          "src/components/Grid/Grid.tsx",
+          'src/components/Grid/GridItem/GridItem.tsx',
         ],
       },
       {
@@ -61,7 +61,7 @@ module.exports = {
           "src/components/SidenavLink/SidenavLink.tsx",
           "src/components/SidenavSection/SidenavSection.tsx",
           "src/components/SidenavTitle/SidenavTitle.tsx",
-          // "src/components/HeaderDropdown/HeaderDropdown.tsx",
+          "src/components/HeaderDropdown/HeaderDropdown.tsx",
         ],
       },
       {

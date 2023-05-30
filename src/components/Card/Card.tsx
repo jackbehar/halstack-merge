@@ -7,17 +7,17 @@ export interface MergeCardPropsType extends Omit<CardPropsType, "onClick">{
 }
 
 
-export default function DxcCard(props: CardPropsType) {
+export default function DxcCard(props: MergeCardPropsType) {
   return <div><DxcCardUXP
   imageSrc={props.imageSrc} 
   imageBgColor={props.imageBgColor}
   imagePadding={props.imagePadding}
   imagePosition={props.imagePosition}
   linkHref={props.linkHref}
-  onClick={undefined}
   imageCover={props.imageCover}
   margin={props.margin}
   tabIndex={props.tabIndex}
   outlined={props.outlined}
+  {...props}
 >{props.children}</DxcCardUXP></div>;
 }

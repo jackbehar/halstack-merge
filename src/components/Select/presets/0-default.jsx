@@ -3,7 +3,7 @@ import DxcSelect from "../Select";
 
 export default (
   <DxcSelect
-    uxpId="button"
+    uxpId="select"
     label="Select your favorite city"
     placeholder="Choose a city"
     size="small"

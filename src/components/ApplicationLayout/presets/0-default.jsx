@@ -4,7 +4,7 @@ import DxcSidenav from "../../Sidenav/Sidenav";
 import DxcSidenavLink from "../../SidenavLink/SidenavLink";
 import DxcSidenavGroup from "../../SidenavGroup/SidenavGroup";
 import DxcHeader from "../../Header/Header";
-// import DxcHeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
+import DxcHeaderDropdown from "../../HeaderDropdown/HeaderDropdown";
 import DxcSidenavTitle from "../../SidenavTitle/SidenavTitle";
 
 const options = [
@@ -25,7 +25,7 @@ const options = [
 export default (
   <DxcApplicationLayout uxpId="dxc-application-layout">
     <DxcHeader uxpId="header" slotName="header" underlined>
-    {/* <DxcHeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/> */}
+    <DxcHeaderDropdown uxpId="header-dropdown" label="Select OS" options={options}/>
     </DxcHeader>
     <DxcSidenav uxpId="sidenav" slotName="sidenav">
     <DxcSidenavTitle uxpId="sidenav-title">
