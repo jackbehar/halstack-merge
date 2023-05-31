@@ -18,7 +18,7 @@ interface MyComponentProps {
   items: Array<typeof people>;
 }
 
-const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
+const ArrayTest: React.FC<MyComponentProps> = ({ items= people }) => {
   return (
     <div>
      {JSON.stringify(items)}
