@@ -15,7 +15,7 @@ const people: { label: string; value: string; }[] = [
 ]
 
 interface MyComponentProps {
-  items: typeof people;
+  items: Array<typeof people>;
 }
 
 const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
