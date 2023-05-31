@@ -1,24 +1,11 @@
 import React from 'react';
 
-
-
-
-const people: { label: string; value: string; }[] = [
-  {
-    label: '27',
-    value: 'Tim'
-  },
-  {
-    label: '237',
-    value: 'Teeim'
-  },
-]
-
 interface MyComponentProps {
-  items: Array<typeof people>;
+    value: 'Teeim'
+  items: Array<object>;
 }
 
-const ArrayTest: React.FC<MyComponentProps> = ({ items= people }) => {
+const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
   return (
     <div>
      {JSON.stringify(items)}
