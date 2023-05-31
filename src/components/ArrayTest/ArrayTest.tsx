@@ -1,12 +1,22 @@
 import React from 'react';
 
+
+
+
+const people: { label: string; value: string; }[] = [
+  {
+    label: '27',
+    value: 'Tim'
+  },
+  {
+    label: '237',
+    value: 'Teeim'
+  },
+]
+
 interface MyComponentProps {
-  items: Array<{ label: string; value: number; }>;
+  items: typeof people;
 }
-
-
-
-
 
 const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
   return (
