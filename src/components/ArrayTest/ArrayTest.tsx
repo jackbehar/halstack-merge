@@ -1,8 +1,12 @@
 import React from 'react';
 
 interface MyComponentProps {
-  items: Array<Array<any>>;
+  items: Array<{ label: string; value: number; }>;
 }
+
+
+
+
 
 const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
   return (
