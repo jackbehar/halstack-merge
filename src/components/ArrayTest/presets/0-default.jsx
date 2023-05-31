@@ -1,8 +1,23 @@
 import * as React from "react";
 import ArrayTest from "../ArrayTest";
 
-const myItems = ['Item 1', 'Item 2', 'Item 3'];
-
 export default (
-  <ArrayTest uxpId="ArrayTest" items={myItems}/>
+  <ArrayTest uxpId="ArrayTest" items={[
+    {
+      label: "Madrid",
+      value: "madrid",
+    },
+    {
+      label: "Melbourne",
+      value: "melbourne",
+    },
+    {
+      label: "London",
+      value: "london",
+    },
+    {
+      label: "Roma",
+      value: "roma",
+    },
+  ]}/>
 );

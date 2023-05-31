@@ -1,15 +1,13 @@
 import React from 'react';
 
 interface MyComponentProps {
-  items: string[];
+  items: Array<Array<any>>;
 }
 
 const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
   return (
     <div>
-      {items.map((item, index) => (
-        <p key={index}>{item}</p>
-      ))}
+     {JSON.stringify(items)}
     </div>
   );
 };
