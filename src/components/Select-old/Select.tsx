@@ -59,7 +59,7 @@ const options = [
 ];
 
 export interface MergeSingleSelect extends SingleSelect {
-options: object
+
 }
 
 
