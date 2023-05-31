@@ -1,3 +1,4 @@
+import * as React from "react";
 import DxcSelect from "../Select";
 
 export default (
@@ -5,6 +6,7 @@ export default (
     uxpId="select"
     label="Select your favorite city"
     placeholder="Choose a city"
+    size="small"
     options={[
       {
         label: "Madrid",
