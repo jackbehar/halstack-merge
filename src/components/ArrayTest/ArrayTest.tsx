@@ -1,16 +1,14 @@
 import React from 'react';
 
 interface MyComponentProps {
-    value: 'Teeim'
   items: Array<object>;
 }
 
-const ArrayTest: React.FC<MyComponentProps> = ({ items }) => {
-  return (
-    <div>
-     {JSON.stringify(items)}
-    </div>
-  );
-};
+const ArrayTest = (props: MyComponentProps) => (
+  <div>
+    {JSON.stringify(props.items)}
+  </div>
+);
+
 
 export default ArrayTest;
