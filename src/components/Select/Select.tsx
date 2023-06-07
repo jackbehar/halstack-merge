@@ -6,9 +6,7 @@ import SelectPropsType from "@dxc-technology/halstack-react/select/types";
  * @uxpinwrappers SkipContainerWrapper
  */
 const DxcSelect = (props: SelectPropsType) => (
-  <div style={{ display: "grid" }}>
-    <HalstackSelect {...props} />
-  </div>
+    <HalstackSelect {...props} key={Math.random()}/>
 );
 
 export default DxcSelect;

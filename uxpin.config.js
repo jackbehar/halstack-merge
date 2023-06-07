@@ -4,6 +4,9 @@ module.exports = {
       {
         name: "Components",
         include: [
+          // "src/components/ResponsiveContainer/ResponsiveContainer.tsx",
+          "src/components/slider/Slider.tsx",
+          "src/components/SliderJS/SliderJS.jsx",
           "src/components/ArrayTest/ArrayTest.tsx",
           "src/components/BulletedList/BulletedList.tsx",
           "src/components/BulletedListItem/BulletedListItem.tsx",
