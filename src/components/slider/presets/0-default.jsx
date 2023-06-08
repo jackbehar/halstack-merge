@@ -4,7 +4,7 @@ export default (
   <DxcSlider
     uxpId="slider"
     label="Select a value"
-    defaultValue={50}
+    value={50}
     showLimitsValues
     marks
     step={10}
