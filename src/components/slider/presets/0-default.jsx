@@ -5,8 +5,10 @@ export default (
     uxpId="slider"
     label="Select a value"
     value={50}
-    showLimitsValues
     marks
     step={10}
+    minValue={20}
+    maxValue={80}
+    showLimitsValues={true}
   />
 );
