@@ -5,6 +5,9 @@ module.exports = {
         name: "Components",
         include: [
           // "src/components/ResponsiveContainer/ResponsiveContainer.tsx",
+          "src/components/radio-group/RadioGroup.tsx",
+          "src/components/radio-group-refresh-issue/RadioGroup-refresh-issue.tsx",
+
           "src/components/slider/Slider.tsx",
           "src/components/SliderJS/SliderJS.jsx",
           "src/components/ArrayTest/ArrayTest.tsx",
@@ -29,8 +32,10 @@ module.exports = {
           "src/components/Alert/Alert.tsx",
           "src/components/Dropdown/Dropdown.tsx",
           "src/components/QuickNav/QuickNav.tsx",
-          "src/components/NavTabs/NavTabs.tsx",
+          "src/components/NavTabs-OLD/NavTabs.tsx",
           "src/components/NavTab/NavTab.tsx",
+          "src/components/nav-tabs/NavTabs.tsx",
+          "src/components/nav-tabs/tab/Tab.tsx",
           "src/components/Wizard/Wizard.tsx",
           "src/components/Paginator/Paginator.tsx",
           "src/components/ResultsetTable/ResultsetTable.tsx",
