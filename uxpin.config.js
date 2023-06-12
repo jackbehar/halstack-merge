@@ -8,6 +8,8 @@ module.exports = {
           "src/components/radio-group/RadioGroup.tsx",
           "src/components/radio-group-refresh-issue/RadioGroup-refresh-issue.tsx",
 
+          "src/components/file-input/FileInput.tsx",
+
           "src/components/slider/Slider.tsx",
           "src/components/SliderJS/SliderJS.jsx",
           "src/components/ArrayTest/ArrayTest.tsx",
